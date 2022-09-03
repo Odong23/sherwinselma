@@ -1,0 +1,188 @@
+@import url(language.css);
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 span {
+	color: #242424;
+	text-align: center;
+	line-height: 1.25;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.container {
+	padding: 50px 0;
+}
+
+.row {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.text_color {
+	color: rgb(195, 0, 255);
+}
+
+.section_title {
+	margin-bottom: 20px;
+}
+
+/* NAVIGATION BAR */
+nav {
+	height: 100px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav_link-list {
+	display: flex;
+}
+
+.nav_link-anchor {
+	margin: 0 12px;
+	color: #242424;
+	font-weight: 700;
+}
+
+.personal_logo {
+	font-size: 24px;
+	color: rgb(195, 0, 255);
+	margin: 0 12px;
+	font-weight: bold;
+}
+
+/* About Me */
+#about_me {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.about_me_info {
+	display: flex;
+	flex-direction: column;
+}
+
+.about_me_info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about_me_picture-mask {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+	margin-bottom: 28px;
+}
+
+.about_me_picture {
+	width: 100%;
+	transform: scale(1.5);
+	padding-top: 8px;
+}
+
+.about_me_info-title {
+	margin-bottom: 16px;
+}
+
+.about_me_info-para {
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+.about_me_link {
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0 16px;
+}
+
+.about_me_info_img-container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.about_me_info_img {
+	width: 100%;
+}
+
+/* Programming Skills */
+.language_img {
+	width: 100%;
+	max-width: 100px;
+	transition: all 300ms;
+}
+
+.language:hover .language_img {
+	filter: brightness(80%);
+	opacity: 0.86;
+	transform: scale(0.9);
+}
+
+
+.language {
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.languages_img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 16px;
+}
+
+.language_list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.language_name {
+	position: absolute;
+	bottom: 0;
+	transform: scale(0);
+	transition: all 300ms;
+}
+
+.language:hover .language_name {
+	transform: scale(1);
+}

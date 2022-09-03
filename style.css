@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+.row {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.text-color {
+	color: rgb(65, 255, 106);
+}
+
+/* Navigation Bar */
+nav {
+	position: fixed;
+	height: 80px;
+	width: 100%;
+}
+
+label.logo {
+	color: black;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+
+nav ul li a {
+	color: black;
+	font-size: 17px;
+	text-transform: uppercase;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+/* About Me */
+.about-me {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-me-info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.about-me_picture-mask {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+	margin-bottom: 28px;
+}
+
+.about-me-image {
+	width: 100%;
+
+	/* improving my picture */
+	transform: scale(1.5);
+	padding-top: 8px;
+}
+
+.about-me-title {
+	margin-bottom: 16px;
+}
+
+.about-me-info-para {
+	font-size: 20px;
+	margin-bottom: 28px;
+}
+
+.about-me-link {
+	font-size: 20px;
+	text-decoration: none;
+	padding: 0 16px;
+}
+
